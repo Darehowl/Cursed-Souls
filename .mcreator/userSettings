@@ -2,10 +2,5 @@
   "workspacePanelIconSize": "TILES",
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
-  "projectBrowserSplitPos": 0,
-  "projectBrowserState": {
-    "expandedPaths": [
-      "[, Cursed Souls]"
-    ]
-  }
+  "projectBrowserSplitPos": 0
 }
