@@ -4,7 +4,7 @@ license="Custom license"
 
 [[mods]]
 modId="cursed_souls"
-version="0.1.9"
+version="0.1.2"
 displayName="Cursed Souls"
 displayURL="https://mcreator.net"
 credits="Darehowl, Yousef, Atsey"
@@ -21,12 +21,6 @@ description="Addon for Cursed Fate"
     ordering="AFTER"
     side="BOTH"
 
-[[dependencies.cursed_souls]]
-    modId="cursedfate"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 [[dependencies.cursed_souls]]
     modId="kleidersplayerrenderer"

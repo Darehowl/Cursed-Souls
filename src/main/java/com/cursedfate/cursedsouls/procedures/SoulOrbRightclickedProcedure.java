@@ -281,35 +281,225 @@ public class SoulOrbRightclickedProcedure {
 									});
 								}
 								{
-									double _setval = 25;
+									double _setval = new Object() {
+										double convert(String s) {
+											try {
+												return Double.parseDouble(s.trim());
+											} catch (Exception e) {
+											}
+											return 0;
+										}
+									}.convert(new Object() {
+										public String getResult(Entity _ent, String _command) {
+											StringBuilder _result = new StringBuilder();
+											if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+												CommandSource _dataConsumer = new CommandSource() {
+													@Override
+													public void sendSystemMessage(Component message) {
+														_result.append(message.getString());
+													}
+
+													@Override
+													public boolean acceptsSuccess() {
+														return true;
+													}
+
+													@Override
+													public boolean acceptsFailure() {
+														return true;
+													}
+
+													@Override
+													public boolean shouldInformAdmins() {
+														return false;
+													}
+												};
+												_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+														_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+											}
+											return _result.toString();
+										}
+									}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s InnateMastery")) - 25;
 									entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 										capability.soul1innate = _setval;
 										capability.syncPlayerVariables(entity);
 									});
 								}
 								{
-									double _setval = 25;
+									double _setval = new Object() {
+										double convert(String s) {
+											try {
+												return Double.parseDouble(s.trim());
+											} catch (Exception e) {
+											}
+											return 0;
+										}
+									}.convert(new Object() {
+										public String getResult(Entity _ent, String _command) {
+											StringBuilder _result = new StringBuilder();
+											if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+												CommandSource _dataConsumer = new CommandSource() {
+													@Override
+													public void sendSystemMessage(Component message) {
+														_result.append(message.getString());
+													}
+
+													@Override
+													public boolean acceptsSuccess() {
+														return true;
+													}
+
+													@Override
+													public boolean acceptsFailure() {
+														return true;
+													}
+
+													@Override
+													public boolean shouldInformAdmins() {
+														return false;
+													}
+												};
+												_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+														_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+											}
+											return _result.toString();
+										}
+									}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s Level")) - 25;
 									entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 										capability.soul1level = _setval;
 										capability.syncPlayerVariables(entity);
 									});
 								}
 								{
-									double _setval = 25;
+									double _setval = new Object() {
+										double convert(String s) {
+											try {
+												return Double.parseDouble(s.trim());
+											} catch (Exception e) {
+											}
+											return 0;
+										}
+									}.convert(new Object() {
+										public String getResult(Entity _ent, String _command) {
+											StringBuilder _result = new StringBuilder();
+											if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+												CommandSource _dataConsumer = new CommandSource() {
+													@Override
+													public void sendSystemMessage(Component message) {
+														_result.append(message.getString());
+													}
+
+													@Override
+													public boolean acceptsSuccess() {
+														return true;
+													}
+
+													@Override
+													public boolean acceptsFailure() {
+														return true;
+													}
+
+													@Override
+													public boolean shouldInformAdmins() {
+														return false;
+													}
+												};
+												_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+														_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+											}
+											return _result.toString();
+										}
+									}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s CEMastery")) - 25;
 									entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 										capability.soul1ce = _setval;
 										capability.syncPlayerVariables(entity);
 									});
 								}
 								{
-									double _setval = 25;
+									double _setval = new Object() {
+										double convert(String s) {
+											try {
+												return Double.parseDouble(s.trim());
+											} catch (Exception e) {
+											}
+											return 0;
+										}
+									}.convert(new Object() {
+										public String getResult(Entity _ent, String _command) {
+											StringBuilder _result = new StringBuilder();
+											if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+												CommandSource _dataConsumer = new CommandSource() {
+													@Override
+													public void sendSystemMessage(Component message) {
+														_result.append(message.getString());
+													}
+
+													@Override
+													public boolean acceptsSuccess() {
+														return true;
+													}
+
+													@Override
+													public boolean acceptsFailure() {
+														return true;
+													}
+
+													@Override
+													public boolean shouldInformAdmins() {
+														return false;
+													}
+												};
+												_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+														_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+											}
+											return _result.toString();
+										}
+									}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s WeaponMastery")) - 25;
 									entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 										capability.soul1weapon = _setval;
 										capability.syncPlayerVariables(entity);
 									});
 								}
 								{
-									double _setval = 25;
+									double _setval = new Object() {
+										double convert(String s) {
+											try {
+												return Double.parseDouble(s.trim());
+											} catch (Exception e) {
+											}
+											return 0;
+										}
+									}.convert(new Object() {
+										public String getResult(Entity _ent, String _command) {
+											StringBuilder _result = new StringBuilder();
+											if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+												CommandSource _dataConsumer = new CommandSource() {
+													@Override
+													public void sendSystemMessage(Component message) {
+														_result.append(message.getString());
+													}
+
+													@Override
+													public boolean acceptsSuccess() {
+														return true;
+													}
+
+													@Override
+													public boolean acceptsFailure() {
+														return true;
+													}
+
+													@Override
+													public boolean shouldInformAdmins() {
+														return false;
+													}
+												};
+												_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+														_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+											}
+											return _result.toString();
+										}
+									}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s MeleeMastery")) - 25;
 									entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
 										capability.soul1melee = _setval;
 										capability.syncPlayerVariables(entity);
@@ -408,19 +598,171 @@ public class SoulOrbRightclickedProcedure {
 								}
 							} else {
 								if (entity instanceof Player _player && !_player.level().isClientSide())
-									_player.displayClientMessage(Component.literal("You Need More Melee Mastery"), false);
+									_player.displayClientMessage(Component.literal(("You Need More Melee Mastery" + (100 - new Object() {
+										double convert(String s) {
+											try {
+												return Double.parseDouble(s.trim());
+											} catch (Exception e) {
+											}
+											return 0;
+										}
+									}.convert(new Object() {
+										public String getResult(Entity _ent, String _command) {
+											StringBuilder _result = new StringBuilder();
+											if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+												CommandSource _dataConsumer = new CommandSource() {
+													@Override
+													public void sendSystemMessage(Component message) {
+														_result.append(message.getString());
+													}
+
+													@Override
+													public boolean acceptsSuccess() {
+														return true;
+													}
+
+													@Override
+													public boolean acceptsFailure() {
+														return true;
+													}
+
+													@Override
+													public boolean shouldInformAdmins() {
+														return false;
+													}
+												};
+												_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+														_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+											}
+											return _result.toString();
+										}
+									}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s StrengthMastery"))))), false);
 							}
 						} else {
 							if (entity instanceof Player _player && !_player.level().isClientSide())
-								_player.displayClientMessage(Component.literal("You Need More Weapon Mastery"), false);
+								_player.displayClientMessage(Component.literal(("You Need More Weapon Mastery" + (100 - new Object() {
+									double convert(String s) {
+										try {
+											return Double.parseDouble(s.trim());
+										} catch (Exception e) {
+										}
+										return 0;
+									}
+								}.convert(new Object() {
+									public String getResult(Entity _ent, String _command) {
+										StringBuilder _result = new StringBuilder();
+										if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+											CommandSource _dataConsumer = new CommandSource() {
+												@Override
+												public void sendSystemMessage(Component message) {
+													_result.append(message.getString());
+												}
+
+												@Override
+												public boolean acceptsSuccess() {
+													return true;
+												}
+
+												@Override
+												public boolean acceptsFailure() {
+													return true;
+												}
+
+												@Override
+												public boolean shouldInformAdmins() {
+													return false;
+												}
+											};
+											_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(),
+													_ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4, _ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+										}
+										return _result.toString();
+									}
+								}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s WeaponMastery"))))), false);
 						}
 					} else {
 						if (entity instanceof Player _player && !_player.level().isClientSide())
-							_player.displayClientMessage(Component.literal("You Need More CE Mastery"), false);
+							_player.displayClientMessage(Component.literal(("You Need More CE Mastery" + (100 - new Object() {
+								double convert(String s) {
+									try {
+										return Double.parseDouble(s.trim());
+									} catch (Exception e) {
+									}
+									return 0;
+								}
+							}.convert(new Object() {
+								public String getResult(Entity _ent, String _command) {
+									StringBuilder _result = new StringBuilder();
+									if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+										CommandSource _dataConsumer = new CommandSource() {
+											@Override
+											public void sendSystemMessage(Component message) {
+												_result.append(message.getString());
+											}
+
+											@Override
+											public boolean acceptsSuccess() {
+												return true;
+											}
+
+											@Override
+											public boolean acceptsFailure() {
+												return true;
+											}
+
+											@Override
+											public boolean shouldInformAdmins() {
+												return false;
+											}
+										};
+										_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+												_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+									}
+									return _result.toString();
+								}
+							}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s CEMastery"))))), false);
 					}
 				} else {
 					if (entity instanceof Player _player && !_player.level().isClientSide())
-						_player.displayClientMessage(Component.literal("You Need More Player Levels"), false);
+						_player.displayClientMessage(Component.literal(("You Need More Player Levels" + (100 - new Object() {
+							double convert(String s) {
+								try {
+									return Double.parseDouble(s.trim());
+								} catch (Exception e) {
+								}
+								return 0;
+							}
+						}.convert(new Object() {
+							public String getResult(Entity _ent, String _command) {
+								StringBuilder _result = new StringBuilder();
+								if (!_ent.level().isClientSide() && _ent.getServer() != null) {
+									CommandSource _dataConsumer = new CommandSource() {
+										@Override
+										public void sendSystemMessage(Component message) {
+											_result.append(message.getString());
+										}
+
+										@Override
+										public boolean acceptsSuccess() {
+											return true;
+										}
+
+										@Override
+										public boolean acceptsFailure() {
+											return true;
+										}
+
+										@Override
+										public boolean shouldInformAdmins() {
+											return false;
+										}
+									};
+									_ent.getServer().getCommands().performPrefixedCommand(new CommandSourceStack(_dataConsumer, _ent.position(), _ent.getRotationVector(), _ent.level() instanceof ServerLevel ? (ServerLevel) _ent.level() : null, 4,
+											_ent.getName().getString(), _ent.getDisplayName(), _ent.level().getServer(), _ent), _command);
+								}
+								return _result.toString();
+							}
+						}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s Level"))))), false);
 				}
 			} else {
 				if (entity instanceof Player _player && !_player.level().isClientSide())

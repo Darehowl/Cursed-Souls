@@ -16,6 +16,8 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import com.cursedfate.cursedsouls.world.inventory.SoulMenuMenu;
 import com.cursedfate.cursedsouls.procedures.CheckSoulProcedure;
 import com.cursedfate.cursedsouls.procedures.CheckSoul2Procedure;
+import com.cursedfate.cursedsouls.procedures.Check2Procedure;
+import com.cursedfate.cursedsouls.procedures.Check1Procedure;
 import com.cursedfate.cursedsouls.network.SoulMenuButtonMessage;
 import com.cursedfate.cursedsouls.CursedSoulsMod;
 
@@ -53,10 +55,20 @@ public class SoulMenuScreen extends AbstractContainerScreen<SoulMenuMenu> {
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
+		if (Check1Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("cursed_souls:textures/screens/selected.png"), this.leftPos + -71, this.topPos + 35, 0, 0, 40, 40, 40, 40);
+		}
+		if (Check2Procedure.execute(entity)) {
+			guiGraphics.blit(new ResourceLocation("cursed_souls:textures/screens/selected.png"), this.leftPos + 29, this.topPos + 35, 0, 0, 40, 40, 40, 40);
+		}
 
 		guiGraphics.blit(new ResourceLocation("cursed_souls:textures/screens/selected.png"), this.leftPos + -71, this.topPos + 35, 0, 0, 40, 40, 40, 40);
 
 		guiGraphics.blit(new ResourceLocation("cursed_souls:textures/screens/selected.png"), this.leftPos + 29, this.topPos + 35, 0, 0, 40, 40, 40, 40);
+
+		guiGraphics.blit(new ResourceLocation("cursed_souls:textures/screens/soul11.png"), this.leftPos + -59, this.topPos + 47, 0, 0, 16, 16, 16, 208);
+
+		guiGraphics.blit(new ResourceLocation("cursed_souls:textures/screens/soul22.png"), this.leftPos + 41, this.topPos + 47, 0, 0, 16, 16, 16, 208);
 
 		RenderSystem.disableBlend();
 	}
@@ -78,28 +90,28 @@ public class SoulMenuScreen extends AbstractContainerScreen<SoulMenuMenu> {
 	public void init() {
 		super.init();
 		imagebutton_holder = new ImageButton(this.leftPos + -71, this.topPos + 35, 40, 40, 0, 0, 40, new ResourceLocation("cursed_souls:textures/screens/atlas/imagebutton_holder.png"), 40, 80, e -> {
-			if (CheckSoulProcedure.execute(entity)) {
+			if (CheckSoulProcedure.execute()) {
 				CursedSoulsMod.PACKET_HANDLER.sendToServer(new SoulMenuButtonMessage(0, x, y, z));
 				SoulMenuButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
-				this.visible = CheckSoulProcedure.execute(entity);
+				this.visible = CheckSoulProcedure.execute();
 				super.renderWidget(guiGraphics, gx, gy, ticks);
 			}
 		};
 		guistate.put("button:imagebutton_holder", imagebutton_holder);
 		this.addRenderableWidget(imagebutton_holder);
 		imagebutton_holder1 = new ImageButton(this.leftPos + 29, this.topPos + 35, 40, 40, 0, 0, 40, new ResourceLocation("cursed_souls:textures/screens/atlas/imagebutton_holder1.png"), 40, 80, e -> {
-			if (CheckSoul2Procedure.execute(entity)) {
+			if (CheckSoul2Procedure.execute()) {
 				CursedSoulsMod.PACKET_HANDLER.sendToServer(new SoulMenuButtonMessage(1, x, y, z));
 				SoulMenuButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}) {
 			@Override
 			public void renderWidget(GuiGraphics guiGraphics, int gx, int gy, float ticks) {
-				this.visible = CheckSoul2Procedure.execute(entity);
+				this.visible = CheckSoul2Procedure.execute();
 				super.renderWidget(guiGraphics, gx, gy, ticks);
 			}
 		};

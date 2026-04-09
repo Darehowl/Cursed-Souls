@@ -12,8 +12,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.Direction;
 import net.minecraft.commands.Commands;
 
-import com.cursedfate.cursedsouls.procedures.SoulOrbRightclickedProcedure;
 import com.cursedfate.cursedsouls.procedures.RemoveSoulProcedure;
+import com.cursedfate.cursedsouls.procedures.AwakenSoulProcedure;
 
 @Mod.EventBusSubscriber
 public class SoulsCommand {
@@ -33,7 +33,7 @@ public class SoulsCommand {
 					if (entity != null)
 						direction = entity.getDirection();
 
-					SoulOrbRightclickedProcedure.execute(world, x, y, z, entity);
+					AwakenSoulProcedure.execute(world, x, y, z, entity);
 					return 0;
 				})).then(Commands.literal("RemoveSoul").executes(arguments -> {
 					Level world = arguments.getSource().getUnsidedLevel();
