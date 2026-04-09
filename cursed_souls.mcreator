@@ -92,14 +92,14 @@
     {
       "name": "SoulMenu",
       "type": "gui",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "soul_menu",
       "metadata": {
         "files": [
+          "src/main/java/com/cursedfate/cursedsouls/network/SoulMenuButtonMessage.java",
           "src/main/java/com/cursedfate/cursedsouls/client/gui/SoulMenuScreen.java",
-          "src/main/java/com/cursedfate/cursedsouls/world/inventory/SoulMenuMenu.java",
-          "src/main/java/com/cursedfate/cursedsouls/network/SoulMenuButtonMessage.java"
+          "src/main/java/com/cursedfate/cursedsouls/world/inventory/SoulMenuMenu.java"
         ]
       }
     },
@@ -140,7 +140,7 @@
     {
       "name": "Soul1",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "soul_1",
       "metadata": {
@@ -158,7 +158,7 @@
     {
       "name": "Soul2",
       "type": "procedure",
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "soul_2",
       "metadata": {
@@ -200,6 +200,155 @@
             "name": "entity",
             "type": "entity"
           }
+        ]
+      }
+    },
+    {
+      "name": "AwakenSoul",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "awaken_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/procedures/AwakenSoulProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Check1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/procedures/Check1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Check2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/procedures/Check2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "QuickShift",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_shift",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/network/QuickShiftMessage.java"
+        ]
+      }
+    },
+    {
+      "name": "QuickShiftOnKeyPressed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "quick_shift_on_key_pressed",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/procedures/QuickShiftOnKeyPressedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Check3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "check_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/procedures/Check3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CurrentSoul",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "current_soul",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursedfate/cursedsouls/client/screens/CurrentSoulOverlay.java"
         ]
       }
     }
@@ -354,6 +503,7 @@
       "gui.cursed_tweaks.selection.button_sukuna": "Shrine",
       "gui.cursed_tweaks.selection.button_private_pure_love_trainbbbbbbbbb": "Private Pure Love Train",
       "gui.cursed_tweaks.selection.button_projec": "Projection",
+      "key.cursed_souls.quick_shift": "Quick Swap",
       "gui.cursed_tweaks.selection.label_evolutions": "Evolutions",
       "gui.cursed_tweaks.selection.button_yujiaa": "Yuji",
       "key.cursed_souls.soul_binding": "Soul Menu",
@@ -361,6 +511,7 @@
       "gui.cursed_tweaks.selection.button_cursed_partnersss": "Cursed Partners",
       "item.cursed_souls.soul_orb.description_0": "A Mysterious Orb Containing A Dormant Soul!",
       "item.cursed_souls.soul_orb": "Soul Orb",
+      "key.categories.souls": "Souls",
       "gui.cursed_tweaks.selection.button_calamitous_shrine": "Calamitous Shrine",
       "gui.cursed_tweaks.selection.button_jogoaa": "Flames",
       "gui.cursed_tweaks.selection.button_limitless": "Limitless"

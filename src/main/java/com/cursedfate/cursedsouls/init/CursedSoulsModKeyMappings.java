@@ -16,7 +16,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.KeyMapping;
 
 import com.cursedfate.cursedsouls.network.SoulBindingMessage;
-import com.cursedfate.cursedsouls.network.QuickSwapMessage;
+import com.cursedfate.cursedsouls.network.QuickShiftMessage;
 import com.cursedfate.cursedsouls.CursedSoulsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
@@ -34,15 +34,15 @@ public class CursedSoulsModKeyMappings {
 			isDownOld = isDown;
 		}
 	};
-	public static final KeyMapping QUICK_SWAP = new KeyMapping("key.cursed_souls.quick_swap", GLFW.GLFW_KEY_RIGHT_SHIFT, "key.categories.souls") {
+	public static final KeyMapping QUICK_SHIFT = new KeyMapping("key.cursed_souls.quick_shift", GLFW.GLFW_KEY_RIGHT_SHIFT, "key.categories.souls") {
 		private boolean isDownOld = false;
 
 		@Override
 		public void setDown(boolean isDown) {
 			super.setDown(isDown);
 			if (isDownOld != isDown && isDown) {
-				CursedSoulsMod.PACKET_HANDLER.sendToServer(new QuickSwapMessage(0, 0));
-				QuickSwapMessage.pressAction(Minecraft.getInstance().player, 0, 0);
+				CursedSoulsMod.PACKET_HANDLER.sendToServer(new QuickShiftMessage(0, 0));
+				QuickShiftMessage.pressAction(Minecraft.getInstance().player, 0, 0);
 			}
 			isDownOld = isDown;
 		}
@@ -51,7 +51,7 @@ public class CursedSoulsModKeyMappings {
 	@SubscribeEvent
 	public static void registerKeyMappings(RegisterKeyMappingsEvent event) {
 		event.register(SOUL_BINDING);
-		event.register(QUICK_SWAP);
+		event.register(QUICK_SHIFT);
 	}
 
 	@Mod.EventBusSubscriber({Dist.CLIENT})
@@ -60,7 +60,7 @@ public class CursedSoulsModKeyMappings {
 		public static void onClientTick(TickEvent.ClientTickEvent event) {
 			if (Minecraft.getInstance().screen == null) {
 				SOUL_BINDING.consumeClick();
-				QUICK_SWAP.consumeClick();
+				QUICK_SHIFT.consumeClick();
 			}
 		}
 	}

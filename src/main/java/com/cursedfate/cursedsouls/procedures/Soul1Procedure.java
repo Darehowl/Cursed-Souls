@@ -326,7 +326,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum1"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a1 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -371,7 +371,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum2"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a2 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -416,7 +416,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum3"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a3 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -461,7 +461,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum4"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a4 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -506,7 +506,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum5"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a5 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -551,7 +551,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum6"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a6 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -596,7 +596,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum7"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a7 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -641,7 +641,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum8"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a8 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -686,7 +686,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum9"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a9 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -731,7 +731,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum10"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a10 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -776,7 +776,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum11"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a11 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -821,7 +821,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum12"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a12 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -866,7 +866,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum13"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a13 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -911,7 +911,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum14"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a14 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -956,7 +956,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum15"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a15 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1001,7 +1001,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum16"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a16 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1046,7 +1046,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum17"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a17 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1091,7 +1091,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum18"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a18 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1136,7 +1136,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum19"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a19 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1181,7 +1181,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum20"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a20 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1226,7 +1226,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum21"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a21 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
@@ -1271,7 +1271,7 @@ public class Soul1Procedure {
 					}
 				}.getResult(entity, "cursedfate Datapack ReturnAndPrint @s AbilityNum22"));
 				entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.s2a22 = _setval;
+					capability.CursedfateAbilityToCast = _setval;
 					capability.syncPlayerVariables(entity);
 				});
 			}
