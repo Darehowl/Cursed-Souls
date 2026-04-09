@@ -1,0 +1,12 @@
+{
+  "_fv": 73,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "NUMPAD5",
+    "keyBindingName": "Soul Menu",
+    "keyBindingCategoryKey": "souls",
+    "onKeyPressed": {
+      "name": "SoulBindingOnKeyPressed"
+    }
+  }
+}

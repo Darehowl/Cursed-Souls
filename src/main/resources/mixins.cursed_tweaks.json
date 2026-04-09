@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.cursed.tweaks.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.cursed_tweaks.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}

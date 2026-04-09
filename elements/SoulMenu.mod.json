@@ -1,0 +1,82 @@
+{
+  "_fv": 73,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 0,
+    "height": 0,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_holder",
+          "image": "holder.png",
+          "hoveredImage": "selected.png",
+          "onClick": {
+            "name": "Soul1"
+          },
+          "displayCondition": {
+            "name": "CheckSoul"
+          },
+          "x": 143,
+          "y": 155,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_holder1",
+          "image": "holder.png",
+          "hoveredImage": "selected.png",
+          "onClick": {
+            "name": "Soul2"
+          },
+          "displayCondition": {
+            "name": "CheckSoul2"
+          },
+          "x": 243,
+          "y": 155,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "selected.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 143,
+          "y": 155,
+          "locked": false
+        }
+      },
+      {
+        "type": "sprite",
+        "data": {
+          "sprite": "selected.png",
+          "spritesCount": 1,
+          "spriteIndex": {
+            "fixedValue": 0.0
+          },
+          "x": 243,
+          "y": 155,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

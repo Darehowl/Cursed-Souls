@@ -1,0 +1,550 @@
+{
+  "mod_elements": [
+    {
+      "name": "PlayerTicks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_ticks",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/PlayerTicksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/DoNotTouch"
+    },
+    {
+      "name": "SetTechniqueBasedOnCommand",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_technique_based_on_command",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/SetTechniqueBasedOnCommandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/API/ChangeBasedOnYourModID"
+    },
+    {
+      "name": "SetTechnique",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_technique",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/command/SetTechniqueCommand.java"
+        ]
+      },
+      "path": "~/API/ChangeBasedOnYourModID"
+    },
+    {
+      "name": "TechniqueName",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "technique_name",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/TechniqueNameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/API/ChangeBasedOnYourModID"
+    },
+    {
+      "name": "AbiltiesNames",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "abilties_names",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/AbiltiesNamesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/API/ChangeBasedOnYourModID"
+    },
+    {
+      "name": "Ability1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/Ability1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "Ability2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_2",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/Ability2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "Ability3",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_3",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/Ability3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "Ability4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_4",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/Ability4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "Ability5",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_5",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/Ability5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "Ability6",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_6",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/Ability6Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "AbilityTextures",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "ability_textures",
+      "metadata": {
+        "files": [
+          "src/main/java/com/huragan/huraganscursedfateaddon/procedures/AbilityTexturesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/API/ChangeBasedOnYourModID"
+    },
+    {
+      "name": "AbilityUnpress",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_unpress",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/AbilityUnpressProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Abiltiies"
+    },
+    {
+      "name": "OnPlayerJoin",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_join",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/OnPlayerJoinProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/DoNotTouch"
+    },
+    {
+      "name": "SetTechniqueToVariable",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_technique_to_variable",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/SetTechniqueToVariableProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/DoNotTouch"
+    },
+    {
+      "name": "InfiniteCEOnEffectActiveTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinite_ce_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/procedures/InfiniteCEOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Effects"
+    },
+    {
+      "name": "InfiniteCE",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infinite_ce",
+      "metadata": {
+        "files": [
+          "src/main/java/com/cursed/tweaks/potion/InfiniteCEMobEffect.java"
+        ]
+      },
+      "path": "~/Effects"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "NewTechnique",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "CursedfateTechnique",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "Cursedfateinnatemenuopened",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": ""
+    },
+    {
+      "name": "CursedfateAbilityToCast",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    },
+    {
+      "name": "TextureOveride",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {},
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "effect.cursed_tweaks.infinite_ce": "Infinite CE",
+      "effect.huragans_cursed_fate_addon.infinite_ce": "Infinite CE"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "API",
+        "children": [
+          {
+            "name": "ChangeBasedOnYourModID",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Procedures",
+        "children": [
+          {
+            "name": "DoNotTouch",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Abiltiies",
+        "children": []
+      },
+      {
+        "name": "Effects",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "cursed_tweaks",
+    "modName": "Cursed Tweaks",
+    "version": "1.2.7",
+    "author": "Darehowl",
+    "license": "Custom license",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "kleidersplayerrenderer",
+      "use_compiled_mods",
+      "geckolib",
+      "ldlib_api",
+      "playeranimator",
+      "photon_api"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Addon for Cursed Fate",
+    "modElementsPackage": "com.cursed.tweaks"
+  },
+  "mcreatorVersion": 202400452410
+}

@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.huragan.huraganscursedfateaddon.mixins",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.huragans_cursed_fate_addon.refmap.json",
+  "mixins": [],
+  "client": [],
+  "minVersion": "0.8"
+}

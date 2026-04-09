@@ -1,0 +1,45 @@
+{
+  "cursedfate:first_join_advancement": {
+    "criteria": {
+      "first_join_advancement_0": "2026-04-07 20:23:27 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-04-07 20:23:28 +0530"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-04-07 20:23:29 +0530"
+    },
+    "done": false
+  },
+  "cursed_souls:observation_of_the_soul": {
+    "criteria": {
+      "observation_of_the_soul_0": "2026-04-07 20:24:46 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_soul_sand": "2026-04-07 22:44:00 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2026-04-07 22:44:00 +0530"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-04-08 19:39:24 +0530"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

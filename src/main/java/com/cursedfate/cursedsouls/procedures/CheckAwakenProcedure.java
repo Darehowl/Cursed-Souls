@@ -1,0 +1,13 @@
+package com.cursedfate.cursedsouls.procedures;
+
+import net.minecraft.world.entity.Entity;
+
+import com.cursedfate.cursedsouls.network.CursedSoulsModVariables;
+
+public class CheckAwakenProcedure {
+	public static boolean execute(Entity entity) {
+		if (entity == null)
+			return false;
+		return !(entity.getCapability(CursedSoulsModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new CursedSoulsModVariables.PlayerVariables())).Awakening2;
+	}
+}

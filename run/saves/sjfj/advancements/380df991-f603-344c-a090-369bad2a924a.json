@@ -1,0 +1,27 @@
+{
+  "cursedfate:first_join_advancement": {
+    "criteria": {
+      "first_join_advancement_0": "2026-04-08 15:22:32 +0530"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-04-08 15:22:33 +0530"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2026-04-08 15:22:34 +0530"
+    },
+    "done": false
+  },
+  "cursed_souls:observation_of_the_soul": {
+    "criteria": {
+      "observation_of_the_soul_0": "2026-04-09 00:07:21 +0530"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
+}

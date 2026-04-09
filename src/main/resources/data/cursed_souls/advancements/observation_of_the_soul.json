@@ -1,0 +1,30 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "cursed_souls:soul_orb"
+    },
+    "title": {
+      "translate": "advancements.observation_of_the_soul.title"
+    },
+    "description": {
+      "translate": "advancements.observation_of_the_soul.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "observation_of_the_soul_0": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "minecraft:bedrock"
+          ]
+        }
+      }
+    }
+  }
+}
